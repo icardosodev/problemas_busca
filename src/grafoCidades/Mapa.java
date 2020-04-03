@@ -21,22 +21,22 @@ public class Mapa {
     private Cidade tresBarras;
 
     public Mapa() {
-        this.portoUniao = new Cidade("Porto União");
-        this.pauloFrontin = new Cidade("Paulo Frontin");
-        this.canoinhas = new Cidade("Canoinhas");
-        this.irati = new Cidade("Irati");
-        this.palmeira = new Cidade("Palmeira");
-        this.campoLargo = new Cidade("Campo Largo");
-        this.curitiba = new Cidade("Curitiba");
-        this.balsaNova = new Cidade("Balsa Nova");
-        this.araucaria = new Cidade("Araucária");
-        this.saoJose = new Cidade("São José dos Pinhais");
-        this.contenda = new Cidade("Contenda");
-        this.mafra = new Cidade("Mafra");
-        this.tijucas = new Cidade("Tijucas do Sul");
-        this.lapa = new Cidade("Lapa");
-        this.saoMateus = new Cidade("São Mateus do Sul");
-        this.tresBarras = new Cidade("Três Barras");
+        this.portoUniao = new Cidade("Porto União", 203);
+        this.pauloFrontin = new Cidade("Paulo Frontin", 172);
+        this.canoinhas = new Cidade("Canoinhas", 141);
+        this.irati = new Cidade("Irati", 139);
+        this.palmeira = new Cidade("Palmeira", 59);
+        this.campoLargo = new Cidade("Campo Largo", 27);
+        this.curitiba = new Cidade("Curitiba", 0);
+        this.balsaNova = new Cidade("Balsa Nova", 41);
+        this.araucaria = new Cidade("Araucária", 23);
+        this.saoJose = new Cidade("São José dos Pinhais", 13);
+        this.contenda = new Cidade("Contenda", 39);
+        this.mafra = new Cidade("Mafra", 94);
+        this.tijucas = new Cidade("Tijucas do Sul", 56);
+        this.lapa = new Cidade("Lapa", 74);
+        this.saoMateus = new Cidade("São Mateus do Sul", 123);
+        this.tresBarras = new Cidade("Três Barras", 131);
 
         this.portoUniao.setAdjacentes(List.of(new Adjacente(pauloFrontin), new Adjacente(canoinhas), new Adjacente(saoMateus)));
         this.pauloFrontin.setAdjacentes(List.of(new Adjacente(portoUniao), new Adjacente(irati)));
