@@ -1,10 +1,15 @@
-import busca.Largura;
+import busca.Gulosa;
+import grafoCidades.Cidade;
 import grafoCidades.Mapa;
 
 public class Main {
     public static void main(String[] args) {
         Mapa m = new Mapa();
-        Largura l = new Largura(m.getPortoUniao(), m.getCuritiba());
-        l.buscar();
+        Gulosa g = new Gulosa(m.getCuritiba());
+        g.buscar(m.getPortoUniao());
+
+        for (Cidade c:g.getCaminho()) {
+            System.out.println(c.getNome());
+        }
     }
 }
