@@ -38,22 +38,22 @@ public class Mapa {
         this.saoMateus = new Cidade("São Mateus do Sul", 123);
         this.tresBarras = new Cidade("Três Barras", 131);
 
-        this.portoUniao.setAdjacentes(List.of(new Adjacente(pauloFrontin), new Adjacente(canoinhas), new Adjacente(saoMateus)));
-        this.pauloFrontin.setAdjacentes(List.of(new Adjacente(portoUniao), new Adjacente(irati)));
-        this.canoinhas.setAdjacentes(List.of(new Adjacente(pauloFrontin), new Adjacente(tresBarras), new Adjacente(mafra)));
-        this.irati.setAdjacentes(List.of(new Adjacente(pauloFrontin), new Adjacente(palmeira), new Adjacente(saoMateus)));
-        this.palmeira.setAdjacentes(List.of(new Adjacente(irati), new Adjacente(saoMateus), new Adjacente(campoLargo)));
-        this.campoLargo.setAdjacentes(List.of(new Adjacente(palmeira), new Adjacente(balsaNova), new Adjacente(curitiba)));
-        this.curitiba.setAdjacentes(List.of(new Adjacente(campoLargo), new Adjacente(balsaNova), new Adjacente(araucaria), new Adjacente(saoJose)));
-        this.balsaNova.setAdjacentes(List.of(new Adjacente(curitiba), new Adjacente(campoLargo), new Adjacente(contenda)));
-        this.araucaria.setAdjacentes(List.of(new Adjacente(contenda), new Adjacente(curitiba)));
-        this.saoJose.setAdjacentes(List.of(new Adjacente(curitiba), new Adjacente(tijucas)));
-        this.contenda.setAdjacentes(List.of(new Adjacente(balsaNova), new Adjacente(araucaria), new Adjacente(lapa)));
-        this.mafra.setAdjacentes(List.of(new Adjacente(tijucas), new Adjacente(lapa), new Adjacente(canoinhas)));
-        this.tijucas.setAdjacentes(List.of(new Adjacente(mafra), new Adjacente(saoJose)));
-        this.lapa.setAdjacentes(List.of(new Adjacente(saoMateus), new Adjacente(contenda), new Adjacente(mafra)));
-        this.saoMateus.setAdjacentes(List.of(new Adjacente(lapa), new Adjacente(tresBarras), new Adjacente(irati), new Adjacente(palmeira)));
-        this.tresBarras.setAdjacentes(List.of(new Adjacente(saoMateus), new Adjacente(canoinhas)));
+        this.portoUniao.setAdjacentes(List.of(new Adjacente(pauloFrontin, 46), new Adjacente(canoinhas, 78), new Adjacente(saoMateus, 87)));
+        this.pauloFrontin.setAdjacentes(List.of(new Adjacente(portoUniao, 46), new Adjacente(irati, 75)));
+        this.canoinhas.setAdjacentes(List.of(new Adjacente(pauloFrontin, 78), new Adjacente(tresBarras, 12), new Adjacente(mafra, 66)));
+        this.irati.setAdjacentes(List.of(new Adjacente(pauloFrontin, 75), new Adjacente(palmeira, 75), new Adjacente(saoMateus, 57)));
+        this.palmeira.setAdjacentes(List.of(new Adjacente(irati, 75), new Adjacente(saoMateus, 77), new Adjacente(campoLargo, 55)));
+        this.campoLargo.setAdjacentes(List.of(new Adjacente(palmeira, 55), new Adjacente(balsaNova, 22), new Adjacente(curitiba, 29)));
+        this.curitiba.setAdjacentes(List.of(new Adjacente(campoLargo, 29), new Adjacente(balsaNova, 51), new Adjacente(araucaria, 37), new Adjacente(saoJose, 15)));
+        this.balsaNova.setAdjacentes(List.of(new Adjacente(curitiba, 51), new Adjacente(campoLargo, 22), new Adjacente(contenda, 19)));
+        this.araucaria.setAdjacentes(List.of(new Adjacente(contenda, 18), new Adjacente(curitiba, 37)));
+        this.saoJose.setAdjacentes(List.of(new Adjacente(curitiba, 15), new Adjacente(tijucas, 49)));
+        this.contenda.setAdjacentes(List.of(new Adjacente(balsaNova, 19), new Adjacente(araucaria, 18), new Adjacente(lapa, 26)));
+        this.mafra.setAdjacentes(List.of(new Adjacente(tijucas, 99), new Adjacente(lapa, 57), new Adjacente(canoinhas, 66)));
+        this.tijucas.setAdjacentes(List.of(new Adjacente(mafra, 99), new Adjacente(saoJose, 49)));
+        this.lapa.setAdjacentes(List.of(new Adjacente(saoMateus, 60), new Adjacente(contenda, 26), new Adjacente(mafra, 57)));
+        this.saoMateus.setAdjacentes(List.of(new Adjacente(lapa, 60), new Adjacente(tresBarras, 43), new Adjacente(irati, 57), new Adjacente(palmeira, 77)));
+        this.tresBarras.setAdjacentes(List.of(new Adjacente(saoMateus, 43), new Adjacente(canoinhas, 12)));
     }
 
 

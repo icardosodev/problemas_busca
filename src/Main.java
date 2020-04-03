@@ -1,3 +1,4 @@
+import busca.AEstrela;
 import busca.Gulosa;
 import grafoCidades.Cidade;
 import grafoCidades.Mapa;
@@ -5,10 +6,10 @@ import grafoCidades.Mapa;
 public class Main {
     public static void main(String[] args) {
         Mapa m = new Mapa();
-        Gulosa g = new Gulosa(m.getCuritiba());
-        g.buscar(m.getPortoUniao());
+        AEstrela ae = new AEstrela(m.getCuritiba());
+        ae.buscar(m.getPortoUniao());
 
-        for (Cidade c:g.getCaminho()) {
+        for (Cidade c:ae.getCaminho()) {
             System.out.println(c.getNome());
         }
     }
